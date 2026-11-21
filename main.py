@@ -8,6 +8,16 @@ defaulting to /output.
 
 import os
 
+# The joke (the entry itself -- do not change its text):
+#   "I asked the agent to fix one typo live on stage; it refactored
+#    the module, rewrote the tests, and opened a pull request titled
+#    'Complete rewrite (trust me)'."
+# Structure: JOKE is a fixed module-level string; main() resolves the
+# output directory (MAKEFUN_OUTPUT_DIR, default /output), creates it,
+# and writes the joke byte-for-byte to entry.txt. No formatting is
+# applied -- what is written is exactly JOKE, so the output is
+# deterministic and identical on every run.
+
 JOKE = "I asked the agent to fix one typo live on stage; it refactored the module, rewrote the tests, and opened a pull request titled 'Complete rewrite (trust me)'."
 
 
